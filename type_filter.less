@@ -1,0 +1,50 @@
+.set-highlight() {
+    box-sizing: border-box;
+    padding: 5px;
+    border: 3px solid darkred;
+    border-radius: 50%;
+    opacity: 100% !important;
+}
+
+.set-type(@t, @f, @d) when (@t = fighting) and (@f = only) and (@d = easy) {
+    & > img {
+        opacity: 25% !important;
+    } & > img[src*="pkmn/4/2/5.png"], & > img[src*="pkmn/7/6/1.png"], & > img[src*="pkmn/m/z/n.png"],
+       & > img[src*="pkmn/t/7/n/8.png"] {
+           .set-highlight();
+    }
+} .set-type(@t, @f, @d) when (@t = fighting) and (@f = only) and (@d = medium) {
+    & > img {
+        opacity: 25% !important;
+    } & > img[src*="pkmn/t/j.png"], & > img[src*="pkmn/a/2/d.png"], & > img[src*="pkmn/l/6/d.png"],
+       & > img[src*="pkmn/7/d/y.png"], & > img[src*="pkmn/6/3/e.png"], & > img[src*="pkmn/j/o/4.png"],
+       & > img[src*="pkmn/h/w/i.png"], & > img[src*="pkmn/d/k/d.png"], & > img[src*="pkmn/c/w/0/j.png"],
+       & > img[src*="pkmn/5/r/3/2.png"], & > img[src*="pkmn/8/h/p/5.png"], & > img[src*="pkmn/e/2/x/i.png"],
+       & > img[src*="pkmn/j/x/b.png"], & > img[src*="pkmn/h/5/v.png"], & > img[src*="pkmn/d/w/5.png"],
+       & > img[src*="pkmn/a/k/y.png"], & > img[src*="pkmn/a/5/o.png"] {
+           .set-highlight();
+    }
+} .set-type(@t, @f, @d) when (@t = fighting) and (@f = only) and (@d = hard) {
+    & > img {
+        opacity: 25% !important;
+    } & > img[src*="pkmn/1/m/b.png"], & > img[src*="pkmn/i/s/f.png"], & > img[src*="pkmn/2/7/e.png"],
+       & > img[src*="pkmn/f/6/2.png"], & > img[src*="pkmn/2/n/1/d.png"], & > img[src*="pkmn/d/e/3/i.png"],
+       & > img[src*="pkmn/9/8/0/i.png"] {
+           .set-highlight();
+    }
+} .set-type(@t, @f, @d) when (@t = fighting) and (@f = all) {
+    & > img {
+        opacity: 25% !important;
+    } & > img[src*="pkmn/4/2/5.png"], & > img[src*="pkmn/7/6/1.png"], & > img[src*="pkmn/m/z/n.png"],
+       & > img[src*="pkmn/t/7/n/8.png"], & > img[src*="pkmn/t/j.png"], & > img[src*="pkmn/a/2/d.png"],
+       & > img[src*="pkmn/l/6/d.png"], & > img[src*="pkmn/7/d/y.png"], & > img[src*="pkmn/6/3/e.png"],
+       & > img[src*="pkmn/j/o/4.png"], & > img[src*="pkmn/h/w/i.png"], & > img[src*="pkmn/d/k/d.png"],
+       & > img[src*="pkmn/c/w/0/j.png"], & > img[src*="pkmn/5/r/3/2.png"], & > img[src*="pkmn/8/h/p/5.png"],
+       & > img[src*="pkmn/e/2/x/i.png"], & > img[src*="pkmn/j/x/b.png"], & > img[src*="pkmn/h/5/v.png"],
+       & > img[src*="pkmn/d/w/5.png"], & > img[src*="pkmn/a/k/y.png"], & > img[src*="pkmn/a/5/o.png"],
+       & > img[src*="pkmn/1/m/b.png"], & > img[src*="pkmn/i/s/f.png"], & > img[src*="pkmn/2/7/e.png"],
+       & > img[src*="pkmn/f/6/2.png"], & > img[src*="pkmn/2/n/1/d.png"], & > img[src*="pkmn/d/e/3/i.png"],
+       & > img[src*="pkmn/9/8/0/i.png"] {
+           .set-highlight();
+    }
+}
