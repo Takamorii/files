@@ -1,0 +1,46 @@
+@type: custom;
+@filter: egg;
+@difficulty: all;
+
+/////////////////////////////////////////////////////////////////////////////////
+////////////////////////////FILTER CODE START//////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+.pokemon[data-stage=egg] img {
+  .hide();
+  .set-type(@filter, @type, @difficulty);
+} .search();
+
+@search: 'Searching: \A @{type}, @{difficulty}';
+.search() { #sheltercommands:before { width: 100%; text-align: left; white-space: pre; align-self: center; .searching(@filter, @type, @difficulty); } }
+
+//BM:FILTER
+.set-highlight() {
+    border: 3px solid darkgreen;
+    border-radius: 50%;
+    opacity: 100% !important;
+}.set-highlight(@color) {
+    border: 3px solid @color;
+    border-radius: 50%;
+    opacity: 100% !important;
+} .hide() {
+    opacity: 25% !important;
+}
+
+.searching(@f, @t, @d) {
+    & { content: '@{search}'; }
+} .searching(@f, @t, @d) when not (@f = egg) and not (@f = pokemon) and not (@f = both) { 
+    #sheltercommands:before { content: 'Searching: \A Filter not found'; } 
+} .searching(@f, @t, @d) when not (@t = custom) and not (@t = fire) and not (@t = water) and not (@t = electric) and not (@t = grass) and not (@t = ice) and not (@t = fighting) and not (@t = poison) and not (@t = ground) and not (@t = flying) and not (@t = bug) and not (@t = rock) and not (@t = ghost) and not (@t = dragon) and not (@t = dark) and not (@t = steel) and not (@t = fire) and not (@t = fairy) {
+    & { content: 'Searching: \A Type not found'; } 
+} .searching(@f, @t, @d) when not (@d = easy) and not (@d = medium) and not (@d = hard) and not (@d = all) {
+    & { content: 'Searching: \A Difficulty not found'; } 
+} .searching(@f, @t, @d) when (@f = egg) and (@t = fire) and (@d = easy) {
+    & { content: 'Searching: \A No easy fire eggs exist'; } 
+}
+
+.set-type(@f, @t, @d) when (@f = egg) and (@t = custom) and (@d = all) { &[src*='pkmn/f/b/0.png'], &[src*='pkmn/5/d/v.png'] { .set-highlight(@col-border3); } }
+
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////FILTER CODE END///////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
