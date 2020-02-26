@@ -1,0 +1,50 @@
+#multiuser {
+    #partybox { 
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    } & .mu_navlink {
+        margin: 0px auto 10px auto;
+        &.next {
+            position: absolute;
+            left: 20px;
+            top: 13px;
+            margin: 6px;
+            width: 589px;
+            height: 289px;
+            border-radius: 20px;
+        }
+    } & .party {
+        position: relative;
+        box-sizing: border-box;
+        border: none;
+        overflow: hidden;
+        &.wide { width: 600px; height: 300px; } 
+        & > div { position: absolute; margin: 0; padding: 0; width: 100%; height: 100%; left: 0;
+            & > div:not([class='action']) { display: none; } 
+            & .action { width: 100%; height: 100%; } 
+            & .berrybuttons {
+                width: 100%;
+                height: 100%;
+                &[data-up='any'] { a:not([data-berry='chesto']) { display: none; } }
+                &[data-up='sour'] { a:not([data-berry='aspear']) { display: none; } }
+                &[data-up='spicy'] { a:not([data-berry='cheri']) { display: none; } }
+                &[data-up='dry'] { a:not([data-berry='chesto']) { display: none; } }
+                &[data-up='sweet'] { a:not([data-berry='pecha']) { display: none; } }
+                &[data-up='bitter'] { a:not([data-berry='rawst']) { display: none; } }
+            } & a {
+                box-sizing: border-box;
+                width: -webkit-fill-available;
+                height: -webkit-fill-available !important;
+                margin: 5px;
+                z-index: 10;
+                & > img { width: 50%; }
+            }
+        }
+    }
+}
+.mq1, .mq15, .mq2 {
+    & #multiuser .party.wide { width: 300px; height: 150px; }
+    & #multiuser .mu_navlink.next { left: 10px !important; width: 288px !important; height: 139px !important; }
+}
