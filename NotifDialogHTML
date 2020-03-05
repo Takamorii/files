@@ -1,0 +1,17 @@
+<div class='dialog'>
+  <div>
+    <div>
+      <div class='panel'>
+        <h3>Set Notification Sound</h3>
+        <div id='sound-style'>
+          <label for='sound-url'>Sound File URL: </label>
+          <input type='url' id='sound-url' name='sound-url' placeholder='/audio/absol.mp3' />
+        </div>
+        <div id='sound-buttons'>
+          <input type='button' id='confirm' onclick='' />
+          <input type='button' id='cancel' onclick='' />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
