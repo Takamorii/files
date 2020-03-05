@@ -4,3 +4,10 @@
   top: 0;
   z-index: 1000;
 }
+
+#sound-buttons {
+  display: flex; 
+} #sound-buttons > button {
+  height: 20px;
+  margin: auto;
+}
