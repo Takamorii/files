@@ -11,3 +11,7 @@
   height: 20px;
   margin: auto;
 }
+
+label {
+  pointer-events: none;
+}
