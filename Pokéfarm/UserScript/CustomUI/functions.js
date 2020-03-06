@@ -22,6 +22,11 @@ function getPFQPage(conditional) {
 
 function insertHubButton() {
 	var loc = document.querySelector('#head-avatar').querySelector('.tooltip_content');
-	var index = Array.prototype.indexOf(loc.children, loc.querySelector('hr'));
-	return index;
+	var index = loc.childElementCount - 2;
+	
+	var button = document.createElement('a');
+	button.setAttribute('href', '#');
+	button.innerText = 'CustomUI Hub';
+	
+	loc.insertBefore(button, loc.childNodes[index]);
 }
