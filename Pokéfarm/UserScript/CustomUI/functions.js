@@ -1,3 +1,4 @@
+//BM:WEBPAGE
 function getPFQPage(conditional) {
 	var url = window.location.href, start = url.indexOf('.com/') + 5, page;
 		switch (conditional === undefined) {
@@ -20,6 +21,7 @@ function getPFQPage(conditional) {
 		}
 }
 
+//BM:HUB
 function insertHubButton() {
 	var loc = document.querySelector('#head-avatar').querySelector('.tooltip_content');
 	var index = loc.childElementCount - 2;
@@ -39,8 +41,27 @@ function insertHubButton() {
 		if (document.querySelector('#close')) {
 			document.querySelector('#close').onclick = function() {
 				document.querySelector('#core').classList.remove('scrolllock');
+				document.querySelector('.dialog').remove();
 			}
 			clearInterval(isLoaded);
 		}
 	}, 500);
 }
+
+//BM:SHELTER
+function createList() {
+		
+}
+
+//BM:UTILS
+function getIndex(child) {
+  var parent = child.parentNode;
+
+  for (var i = 0; i < parent.childNodes.length; i++) {
+   if (child === parent.childNodes[i]) {
+	return i;
+   } if (i === parent.childNodes.length) {
+	return -1;	   
+   }
+  }
+ }
