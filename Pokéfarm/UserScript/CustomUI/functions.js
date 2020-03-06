@@ -35,6 +35,15 @@ function insertHubButton() {
 	
 	loc.insertBefore(button, loc.childNodes[index]);
 	
+	var isLoaded = setInterval(function() {
+		if (document.querySelector('#close')) {
+			document.querySelector('#close').onclick = function() {
+				document.querySelector('#core').classList.remove('scrolllock');
+			}
+			clearInterval(isLoaded);
+		}
+	}, 500);
+	
 	/*var isLoaded = setInterval(function() {
 		if (document.querySelector('#close')) {
 			document.querySelector('#close').onclick = function() {
