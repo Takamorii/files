@@ -27,6 +27,9 @@ function insertHubButton() {
 	var button = document.createElement('a');
 	button.setAttribute('href', '#');
 	button.innerText = 'CustomUI Hub';
+	button.onclick = function() {
+		document.querySelector('#core').classList.remove('scrolllock');	
+	}
 	
 	loc.insertBefore(button, loc.childNodes[index]);
 }
