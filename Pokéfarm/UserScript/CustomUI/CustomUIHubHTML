@@ -1,0 +1,20 @@
+<div class='dialog'>
+  <div>
+    <div>
+      <div class='panel'>
+        <h3>CustomUI Hub</h3>
+        <div>
+          <ul>
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+            <li>Option 4</li>
+            <li>Option 5</li>
+            <li>Option 6</li>
+          </ul>
+        </div>
+        <button type='button' style='float: right;'>Close</button>
+      </div>
+    </div>
+  </div>
+</div>
