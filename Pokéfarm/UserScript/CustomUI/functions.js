@@ -19,3 +19,9 @@ function getPFQPage(conditional) {
 				break;
 		}
 }
+
+function insertHubButton() {
+	var loc = document.querySelector('#head-avatar').getElementByClassName('tooltip_content');
+	var index = Array.prototype.indexOf(loc.children, loc.querySelector('hr'));
+	return index;
+}
