@@ -34,7 +34,4 @@ function insertHubButton() {
 	}
 	
 	loc.insertBefore(button, loc.childNodes[index]);
-	document.querySelector('#close').onclick = function() {
-		document.querySelector('#core').classList.remove('scrolllock');		
-	}
 }
