@@ -28,8 +28,13 @@ function insertHubButton() {
 	button.setAttribute('href', '#');
 	button.innerText = 'CustomUI Hub';
 	button.onclick = function() {
-		document.querySelector('#core').classList.remove('scrolllock');	
+		var html = GM_getResourceText('CustomUIHubHTML');
+  		document.querySelector('#core').classList.add('scrolllock');
+  		document.querySelector('body').insertAdjacentHTML('beforeend', html);
 	}
 	
 	loc.insertBefore(button, loc.childNodes[index]);
+	document.querySelector('#close').onclick = function() {
+		document.querySelector('#core').classList.remove('scrolllock');		
+	}
 }
