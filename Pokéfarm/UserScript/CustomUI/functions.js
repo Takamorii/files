@@ -43,17 +43,4 @@ function insertHubButton() {
 			clearInterval(isLoaded);
 		}
 	}, 500);
-	
-	/*var isLoaded = setInterval(function() {
-		if (document.querySelector('#close')) {
-			document.querySelector('#close').onclick = function() {
-				document.querySelector('#core').classList.remove('scrolllock');	
-			}
-			clearInt(isLoaded);
-		}
-	}, 500);
-	
-	function clearInt(interval) {
-		
-	}*/
 }
