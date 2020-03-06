@@ -21,7 +21,7 @@ function getPFQPage(conditional) {
 }
 
 function insertHubButton() {
-	var loc = document.querySelector('#head-avatar').getElementByClassName('tooltip_content');
+	var loc = document.querySelector('#head-avatar').querySelector('.tooltip_content');
 	var index = Array.prototype.indexOf(loc.children, loc.querySelector('hr'));
 	return index;
 }
