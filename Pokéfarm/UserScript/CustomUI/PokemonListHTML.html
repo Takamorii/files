@@ -1,12 +1,16 @@
 <div class='panel'>
   <h3 id='list-title'></h3>
   <div id='filters' data-filter='none'>
-    <h5>Search</h5>
-    <input class='search' type='text' placeholder='Pokémon' />
-    <input class='alphabetical' id='none' type='radio' name='filter' />
-    <input class='numerical' id='none' type='radio' name='filter' />
+    <div id='search'>
+      <h5>Search</h5>
+      <input class='search' type='text' placeholder='Pokémon' />
+    </div>
+    <label for='alphabetical>Alphabetical</label>
+    <input id='alphabetical' type='radio' name='filter' data-dir='none' />
+    <label for='numerical>Numerical</label>
+    <input id='numerical' type='radio' name='filter' data-dir='none' />
   </div>
   <div class='scroll'>
-    <div id='list'></div>
+    <div id='list'>Listed Items</div>
   </div>
 </div>
