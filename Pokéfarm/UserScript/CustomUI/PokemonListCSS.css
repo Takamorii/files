@@ -1,6 +1,9 @@
 #list-title {
  align-self: center;
-} #search {
+}
+
+#search {
+ display: inline;
  margin: 4px;
 }
 
