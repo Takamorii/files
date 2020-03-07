@@ -1,1 +1,9 @@
+#list-title {
+ margin: 4px;
+ align-self: center;
+}
 
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+}
