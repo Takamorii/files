@@ -5,6 +5,8 @@
 #search {
  display: inline;
  margin: 4px;
+} #search > h5 {
+ display: inline;
 }
 
 #filters {
