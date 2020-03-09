@@ -34,15 +34,15 @@ function insertHubButton() {
   		document.querySelector('#core').classList.add('scrolllock');
   		document.querySelector('body').insertAdjacentHTML('beforeend', html);
     
-    var isLoaded = setInterval(function() {
-		if (document.querySelector('#close')) {
-			document.querySelector('#close').onclick = function() {
-				document.querySelector('#core').classList.remove('scrolllock');
-				document.querySelector('.dialog').remove();
+			var isLoaded = setInterval(function() {
+			if (document.querySelector('#close')) {
+				document.querySelector('#close').onclick = function() {
+					document.querySelector('#core').classList.remove('scrolllock');
+					document.querySelector('.dialog').remove();
+				}
+				clearInterval(isLoaded);
 			}
-			clearInterval(isLoaded);
-		}
-	}, 500);
+		}, 500);
 	}
 	
 	loc.insertBefore(button, loc.childNodes[index]);
