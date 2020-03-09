@@ -33,11 +33,8 @@ function insertHubButton() {
 		var html = GM_getResourceText('CustomUIHubHTML');
   		document.querySelector('#core').classList.add('scrolllock');
   		document.querySelector('body').insertAdjacentHTML('beforeend', html);
-	}
-	
-	loc.insertBefore(button, loc.childNodes[index]);
-	
-	var isLoaded = setInterval(function() {
+    
+    var isLoaded = setInterval(function() {
 		if (document.querySelector('#close')) {
 			document.querySelector('#close').onclick = function() {
 				document.querySelector('#core').classList.remove('scrolllock');
@@ -46,6 +43,9 @@ function insertHubButton() {
 			clearInterval(isLoaded);
 		}
 	}, 500);
+	}
+	
+	loc.insertBefore(button, loc.childNodes[index]);
 }
 
 //BM:SHELTER
