@@ -4,22 +4,20 @@
       <div class='panel'>
         <h3>CustomUI Hub</h3>
         <div id='settings' style='overflow-y: auto'>
-          <ul id='shelter'>
-            <li id='option'>Shelter List</li>
-            <li>Editable</li>
-            <li>Announce Special</li>
-            <li>Edit Colors</li>
-          </ul>
-          <ul id='item-count'>
-            <li id='option'>Shelter List</li>
-            <li>Editable</li>
-            <li>Create Announcement</li>
-            <li>Edit Colors</li>
-          </ul>
-          <ul id='misc'>
-            <li id='option'>Miscellany</li>
-            <li>Tooltip at Mouse Position</li>
-          </ul>
+          <div class='option-header' id='shelter'>Shelter List</div>
+          <div class='option-list' id='shelter'>
+            <input type='checkbox' class='option' data-opt='1'>Enable</div>
+            <input type='checkbox' class='option' data-opt='2'>Reset to Default</div>
+          </div>
+          <div class='option-header' id='item-watch'>Item Watch</div>
+          <div class='option-list' id='item-watch'>
+            <input type='checkbox' class='option' data-opt='1'>Enable</div>
+            <input type='checkbox' class='option' data-opt='2'>Reset to Default</div>
+          </div>
+          <div class='option-header' id='misc'>Miscellany</div>
+          <div class='option-list' id='misc'>
+            <input type='checkbox' class='option' data-opt='1'>Enable Tooltip at Mouse Position</div>
+          </div>
           <button id='close' type='button' style='float: right;'>Close</button>
         </div>
       </div>
