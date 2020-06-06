@@ -47,3 +47,25 @@ Dialog.enableScroll = function() {
 		document.body.scrollTop = document.documentElement.scrollTop = a;
 	}
 };
+
+function enableCodeOpts(element) {
+	$(element).find('input').toArray().forEach(function(item, index) {
+		item.disabled = false;
+		if(index == 0) { item.checked = true; }
+	});
+}
+
+function getMonData() {
+	if($('#field_field') && $('.field > .fieldmon')) {
+		var mons = $('#field_field[data-mode="private"]').find('.fieldmon').toArray();
+		var dataArray = [], data;
+		mons.forEach(function(item, index) {
+			data = [];
+			data[0] = $(item).attr('data-id');
+			data[1] = $(item).find('.small').attr('src');
+			data[2] = $(item).next().html();
+			dataArray[index] = data;
+		});
+		return dataArray;
+	}
+}
