@@ -1,0 +1,22 @@
+#displaycodes {
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+input ~ label {
+  vertical-align: text-bottom;
+}
+
+.code-types, .display-options {
+  display: inline;
+}
+
+.code-types {
+  float: right;
+}
+
+.display-options {
+  float: left; margin-left: -4px;
+}
