@@ -7,6 +7,7 @@
 
 .code-types, .display-options {
   display: inline;
+  user-select: none;
 }
 
 .code-types {
@@ -14,5 +15,9 @@
 }
 
 .display-options {
-  float: left; margin-left: -4px;
+  float: left;
+}
+
+.display-options > input:first-child {
+  margin-left: -4px;
 }
