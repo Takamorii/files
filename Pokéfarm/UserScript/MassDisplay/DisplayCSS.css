@@ -17,7 +17,3 @@
 .display-options {
   float: left;
 }
-
-.display-options > input:first-child {
-  margin-left: -4px;
-}
