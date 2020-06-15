@@ -2,12 +2,13 @@
 // @name         Mass Platform Codes
 // @namespace    http://www.pokefarm.com/user/Hayashi_Rin
 // @downloadURL  https://github.com/Takamorii/files/raw/master/Pok%C3%A9farm/UserScript/mass-platform-codes.user.js
-// @version      1.0
+// @version      1.01
 // @description  Will add one later.
 // @author       Hayashi Rin
 // @match        https://pokefarm.com/fields
 // @require      http://code.jquery.com/jquery-3.4.1.min.js
 // @require      https://gist.github.com/raw/2625891/waitForKeyElements.js
+// @require      https://github.com/Takamorii/files/raw/master/Pok%C3%A9farm/UserScript/MassDisplay/Functions.js
 // @updateURL    https://github.com/Takamorii/files/raw/master/Pok%C3%A9farm/UserScript/mass-platform-codes.user.js
 // @connect      github.com
 // @grant        GM_getResourceText
