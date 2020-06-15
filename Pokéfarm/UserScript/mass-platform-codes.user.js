@@ -2,7 +2,7 @@
 // @name         Mass Platform Codes
 // @namespace    http://www.pokefarm.com/user/Hayashi_Rin
 // @downloadURL  https://github.com/Takamorii/files/raw/master/Pok%C3%A9farm/UserScript/mass-platform-codes.user.js
-// @version      0.1
+// @version      1.0
 // @description  Will add one later.
 // @author       Hayashi Rin
 // @match        https://pokefarm.com/fields
