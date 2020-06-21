@@ -22,7 +22,7 @@ var $ = window.jQuery;
 waitForKeyElements('[title="Shiny Charm"]', activateUserScript);
 
 function activateUserScript() {
- if($('[title="Shiny Charm"]').text().includes("14h")) {
+ if($('[title="Shiny Charm"]').text().includes("OFF")) {
   var today = new Date();
   checkNewDay(today.getUTCDate());
  }
