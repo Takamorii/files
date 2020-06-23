@@ -1,2 +1,4 @@
-@import url(https://github.com/Takamorii/files/blob/master/Pok%C3%A9farm/Extra%20CSS/pkmnem.ttf?raw=true);
-html, body { font-family: "Power Green", sans-serif; }
+@font-face { font-family: 'Power Green'; src: local('Power Green'), url('pkmnem.woff2'); }
+#core {
+ font-family: 'Power Green'; 
+}
