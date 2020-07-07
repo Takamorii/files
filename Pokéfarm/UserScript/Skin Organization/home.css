@@ -1,8 +1,18 @@
+#skinpage > div:last-of-type {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
 #skinpage > div:last-of-type > #path, #btt {
 	margin: 16px 0;
 	text-align: center;
 }
 
-#skinpage > div:last-of-type > #path > #path-cur {
+#skinpage > div:last-of-type > #path {
 	pointer-events: none;
+} #skinpage > div:last-of-type > #path > #path-par {
+	pointer-events: auto;
 }
