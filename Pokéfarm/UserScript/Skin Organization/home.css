@@ -1,3 +1,7 @@
+#skinpage img {
+	vertical-align: middle;
+}
+
 #skinpage > div:last-of-type {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
