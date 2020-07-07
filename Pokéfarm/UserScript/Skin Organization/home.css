@@ -7,7 +7,9 @@
 }
 
 #skinpage > div:last-of-type > #path, #btt {
-	margin: 16px 0;
+	margin: 8px 0;
+	text-align: center;
+} #skinpage > div:last-of-type > #add {
 	text-align: center;
 }
 
