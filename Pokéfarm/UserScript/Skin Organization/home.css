@@ -18,3 +18,10 @@
 } #skinpage > div:last-of-type > #path > #path-par {
 	pointer-events: auto;
 }
+
+li[data-link="folder"] {
+	list-style-image: url('https://pokefarm.com/upload/Hayashi_Rin/Icons/folder.png');
+}
+li[data-link="skin"] {
+	list-style-image: url('https://pokefarm.com/upload/Hayashi_Rin/Icons/paper.png');
+}
