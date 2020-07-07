@@ -2,3 +2,7 @@
 	margin: 16px 0;
 	text-align: center;
 }
+
+#skinpage > div:last-of-type > #path > #path-cur {
+	pointer-events: none;
+}
