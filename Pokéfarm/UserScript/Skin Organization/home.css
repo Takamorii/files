@@ -1,0 +1,4 @@
+#skinpage > div:last-of-type > #path, #btt {
+	margin: 16px 0;
+	text-align: center;
+}
