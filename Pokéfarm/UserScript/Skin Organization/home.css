@@ -19,7 +19,8 @@
 
 #skinpage > div:last-of-type > #path {
 	pointer-events: none;
-} #skinpage > div:last-of-type > #path > #path-par {
+} #skinpage > div:last-of-type > #path > #path-par,
+  #skinpage > div:last-of-type > #path > #path-cur > #edit {
 	pointer-events: auto;
 }
 
